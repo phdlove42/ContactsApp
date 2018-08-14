@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+
+export interface ExampleTab {
+  label: string;
+  content: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -6,5 +12,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  faPlus = faPlus;
 }
