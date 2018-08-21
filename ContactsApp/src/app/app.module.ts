@@ -4,10 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import {
   MatSidenavModule,
-  MatIconModule,
-  MatMenuModule,
   MatCardModule,
-  MatTabsModule,
   MatButtonModule,
   MatToolbarModule
 } from '@angular/material';
@@ -37,10 +34,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     FontAwesomeModule,
     MatSidenavModule,
-    MatIconModule,
-    MatMenuModule,
     MatCardModule,
-    MatTabsModule,
     MatButtonModule,
     MatToolbarModule
   ],
