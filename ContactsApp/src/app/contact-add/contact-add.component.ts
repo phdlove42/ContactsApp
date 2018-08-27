@@ -10,18 +10,19 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class ContactAddComponent {
   contactService: any;
+  newContact: Contact;
 
   constructor(
     service: ContactService,
     private router: Router,
     private route: ActivatedRoute) {
     this.contactService = service;
+    this.newContact = new Contact();
    }
 
   onSubmit() {
-    // const test = new Contact();
-    // this.contactService.addContact(test);
-    this.router.navigate(['/contacts'])
+    this.contactService.addContact(this.newContact);
+    this.router.navigate(['contacts'])
     .then(() => {
       console.log('yup');
     })

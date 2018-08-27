@@ -1,14 +1,14 @@
 export class Contact {
-  id = 0;
-  firstName = '';
-  lastName = '';
-  address = '';
-  company = '';
-  github = '';
-  profileImage: any = '';
-  constructor() {}
-
-  fullName() {
-    return `${this.firstName} ${this.lastName}`;
+  public fullName: Function;
+  constructor(
+    public id = 0,
+    public firstName = '',
+    public lastName = '',
+    public address = '',
+    public company = ''
+  ) {
+    this.fullName = () => {
+      return `${this.firstName} ${this.lastName}`;
+    };
   }
 }

@@ -1,6 +1,17 @@
 <div>
-  <form name="contactForm" (ngSubmit)="onSubmit()">
-    <input ng-model="test" type="text">
-    <button type="submit">banana</button>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <input name="firstName" [(ngModel)]="newContact.firstName" type="text">
+    </div>
+    <div>
+      <input name="lastName" [(ngModel)]="newContact.lastName" type="text">
+    </div>
+    <div>
+      <input name="address" [(ngModel)]="newContact.address" type="text">
+    </div>
+    <div>
+      <input name="company" [(ngModel)]="newContact.company" type="text">
+    </div>
+    <button type="submit">Submit</button>
   </form>
 </div>

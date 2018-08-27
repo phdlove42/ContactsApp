@@ -20,7 +20,8 @@ export class ContactService {
   }
 
   addContact(contact: Contact): void {
-    this.contacts.push(contact);
+    const tmp = this.getContacts();
+    tmp.push(contact);
   }
 
   removeContact(contact: Contact): void {
