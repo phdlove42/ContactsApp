@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from './app-routing.module';
 import { ContactAddComponent } from './contact-add/contact-add.component';
 import { ContactComponent } from './contact/contact.component';
+import { ContactService } from './contact-service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { ContactComponent } from './contact/contact.component';
     MatButtonModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
